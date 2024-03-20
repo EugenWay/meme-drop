@@ -1,0 +1,16 @@
+[package]
+name = "meme-drop"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gstd = { git = "https://github.com/gear-tech/gear.git",  tag = "v1.1.0"}
+scale-info = { version = "2", default-features = false }
+parity-scale-codec = { version = "3", default-features = false }
+io = { path = "io" }
+fungible-token-io = { path = "fungible-token/io" }
+
+[build-dependencies]
+gear-wasm-builder = { git = "https://github.com/gear-tech/gear.git", tag = "v1.1.0" }
+io = { path = "io" }
+
